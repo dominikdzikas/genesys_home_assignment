@@ -15,6 +15,9 @@ class Solution:
     }
 
     def letter_combinations(self, digits: str) -> List[str]:
+        if any(d not in self.digit_mapping for d in digits):
+            return []
+        
         if len(digits) == 0:
             return []
         
