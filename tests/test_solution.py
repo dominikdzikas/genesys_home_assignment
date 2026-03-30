@@ -12,3 +12,19 @@ def test_zero_digits() -> None:
 def test_one_digits() -> None:
     solution = Solution()
     assert solution.letter_combinations("2") == ["a","b","c"]
+
+def test_one_letter() -> None:
+    solution = Solution()
+    assert solution.letter_combinations("a") == []
+
+def test_more_digits() -> None:
+    solution = Solution()
+    assert solution.letter_combinations("232323") == []
+
+def test_invalid_digit() -> None:
+    solution = Solution()
+    assert solution.letter_combinations("1") == []
+
+def test_invalid_digits() -> None:
+    solution = Solution()
+    assert solution.letter_combinations("21") == []
