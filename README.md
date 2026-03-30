@@ -49,3 +49,7 @@ python main.py 23
 ```
 pytest
 ```
+## Notes
+- Handles empty input by returning an empty list.
+- Output is generated in a deterministic order based on the backtracking traversal.
+- The solution assumes valid input according to the assignment constraints.
