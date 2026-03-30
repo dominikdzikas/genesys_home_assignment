@@ -21,7 +21,7 @@ class Solution:
         result = []
 
         def backtrack(path: str ,index: int):
-            if len(digits) == 0:
+            if len(digits) == index:
                 result.append(path)
                 return
             else:
@@ -29,6 +29,6 @@ class Solution:
                     backtrack(path + char, index + 1)
         
         
-        backtrack("", digits)
+        backtrack("", 0)
         return result
 
